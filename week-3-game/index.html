@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/javascript/game.js">
-	<title>HangMan</title>
 </head>
-
 <body>
-	<div class="wrapper">
-		<h1>
-			Hangman
-		</h1>
-		<p>
-		Use the alphabet below to guess the word(s).
-		</p>
-	</div>
-	<div class="wrapper">
-		<div id="buttons">
-		</div>
-		<p id="catagoryname">
-			
-		</p>
-		<div id="hold">
-			
-		</div>
-		<p id="mylives">
-			
-		</p>
-		<p id="clue">Clue
-			
-		</p>
-		<div class="container">
-			<button id="hint">Hint
-				
-			</button>
-			<button id="reset">Play Again?
-				
-			</button>
-			
-		</div>
 
-
-	</div>
+<div class="hangman">
+  <div class="guess"></div>
+  <form class="guessForm">
+  <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
+  </form>  
+  <p>Hint: words are web related. <br/><a href="http://codepen.io/natewiley">Follow Me on Codepen</a></p>
+  <div class="wrong">
+    <div class="wrongLetters"></div>
+  </div>
+  <div class="message">
+    <h1 class="title"></h1>
+    <p class="text"></p>
+    <button class="restart button">Play Again?</button>
+    
+  </div>
+</div>
 
 
 </body>
